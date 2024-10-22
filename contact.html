@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body class="font-poppins">
+    <nav>
+      <div class="bg-secondary py-4 hidden sm:block">
+        <div
+          class="max-w-[1320px] mx-auto flex justify-between items-center px-4"
+        >
+          <div class="flex items-center space-x-16">
+            <a href="#" class="flex items-center space-x-3">
+              <img
+                src="assets/images/call.png"
+                alt="Call Icon"
+                class="w-[29px] h-[29px]"
+              />
+              <span class="text-black font-bold text-lg">+0123456789</span>
+            </a>
+
+            <a href="#" class="flex items-center space-x-3">
+              <img
+                src="assets/images/mail.png"
+                alt="Mail Icon"
+                class="w-[29px] h-[29px]"
+              />
+              <span class="text-black font-bold text-lg">info@cyphrr.com</span>
+            </a>
+          </div>
+
+          <div class="flex space-x-8">
+            <a href="#" class="text-black text-2xl">
+              <img
+                class="w-[27px] h-[27px]"
+                src="assets/images/vector ig.png"
+                alt="instagram"
+              />
+            </a>
+            <a href="#" class="text-black text-2xl">
+              <img
+                class="w-[27px] h-[27px]"
+                src="assets/images/vector fb.png"
+                alt="facebook"
+              />
+            </a>
+            <a href="#" class="text-black text-2xl">
+              <img
+                class="w-[27px] h-[27px]"
+                src="assets/images/vector tw.png"
+                alt="twitter"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="bg-2 text-white font-poppins">
+
+      <header class="flex justify-between items-center py-11 max-w-[1320px] px-6 mx-auto">
+        <div>
+          <img class="w-[259px]" src="assets/images/cyphrr.png" alt="Logo" />
+        </div>
+      
+        <div class="hidden lg:flex space-x-9">
+          <a href="./index.html" class="text-sm hover:text-secondary text-primary">Home</a>
+          <a href="./about.html" class="text-sm hover:text-secondary text-primary">About</a>
+          <a href="./contact.html" class="text-sm hover:text-secondary text-primary">Contact</a>
+        </div>
+      
+        <div class="hidden lg:flex space-x-4">
+          <button class="flex items-center space-x-2 text-lg px-4 py-2 bg-transparent">
+            <img class="w-[30px]" src="assets/images/person_add.png" alt="My Account" />
+            <span class="text-primary text-sm">My Account</span>
+          </button>
+          <button class="px-2 py-2 bg-secondary text-black rounded-lg hover:bg-primary font-bold text-sm">
+            Create Account
+          </button>
+        </div>
+      
+        
+        <button
+          class="lg:hidden p-2 w-10 h-10 text-gray-400 rounded-lg hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-200"
+          onclick="document.getElementById('mobile-menu').classList.toggle('hidden');">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
+      </header>
+      
+      
+      <div id="mobile-menu" class="hidden lg:hidden  p-6">
+        <a href="./index.html" class="block text-sm hover:text-secondary text-primary mb-4">Home</a>
+        <a href="./about.html" class="block text-sm hover:text-secondary text-primary mb-4">About</a>
+        <a href="./contact.html" class="block text-sm hover:text-secondary text-primary mb-4">Contact</a>
+        <button class="flex items-center space-x-2 text-lg bg-transparent w-full mb-4">
+          <img class="w-[30px]" src="assets/images/person_add.png" alt="My Account" />
+          <span class="text-primary text-sm">My Account</span>
+        </button>
+        <button class="px-2 py-2 bg-secondary text-black rounded-lg hover:bg-primary font-bold text-sm w-full">
+          Create Account
+        </button>
+      </div>
+      
+
+      <div class="text-center mt-36">
+        <h1 class="text-primary font-bold text-3xl">Contact Us</h1>
+        <br />
+        <span class="text-secondary cursor-pointer"> Home</span>
+        <span class="text-secondary">|</span>
+        <span class="text-primary cursor-pointer"> Contact Us</span>
+      </div>
+    </div>
+
+    <div class="bg-black mx-auto flex justify-between items-center px-4">
+      <div class="text-white p-8 max-w-[1320px] mx-auto">
+        <div class="flex flex-col items-center justify-center  p-4">
+          <div class="text-center mb-8">
+            <h1 class="text-2xl font-semibold text-secondary">Get in Touch</h1>
+            <p class="text-4xl text-primary mt-2 font-bold mb-4 w-[87%] mx-auto">
+              Have any questions, feel free to message us!
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-28 mb-10 text-center">
+            <div>
+              <img
+                class="mx-auto mb-4"
+                src="assets/images/Icon (1).png"
+                alt=""
+              />
+              <div class="text-xl font-medium text-secondary mb-4">
+                Our Address
+              </div>
+              <p class="mt-2">Grand Cayman,</p>
+              <p>Cayman Islands</p>
+            </div>
+            <div>
+              <img
+                class="mx-auto mb-4"
+                src="assets/images/Icon (4).png"
+                alt=""
+              />
+              <div class="text-xl font-medium text-secondary mb-4">
+                Our Email
+              </div>
+              <p class="mt-2">info@cyphrr.com</p>
+            </div>
+            <div>
+              <img
+                class="mx-auto mb-4"
+                src="assets/images/Icon (5).png"
+                alt=""
+              />
+              <div class="text-xl font-medium text-secondary mb-4">
+                Live Support
+              </div>
+              <p class="mt-2">Live chat service</p>
+              <p  
+                >www.cyphrlivechat.com</p>
+            </div>
+          </div>
+
+          <div
+            class="p-6 text-white rounded-lg shadow-lg w-full max-w-3xl mx-auto"
+          >
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div class="mb-12">
+                <label for="name" class="block text-sm font-medium"
+                  >Name*</label
+                >
+                <input
+                  type="text"
+                  id="name"
+                  placeholder="Name"
+                  class="w-full p-4 mt-4 bg-dark-light rounded-2xl text-white placeholder-gray-400 focus:outline-none"
+                />
+              </div>
+
+              <div>
+                <label for="email" class="block text-sm font-medium"
+                  >Email*</label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="Email"
+                  class="w-full p-4 mt-4 bg-dark-light rounded-2xl text-white placeholder-gray-400 focus:outline-none"
+                />
+              </div>
+            </div>
+
+            <div class="mt-6 mb-12">
+              <label for="subject" class="block text-sm font-medium"
+                >Subject*</label
+              >
+              <input
+                type="text"
+                id="subject"
+                placeholder="Subject"
+                class="w-full p-4 mt-4 bg-dark-light rounded-2xl text-white placeholder-gray-400 focus:outline-none"
+              />
+            </div>
+
+            <div class="mt-6 mb-4">
+              <label for="message" class="block text-sm font-medium"
+                >Message*</label
+              >
+              <textarea
+                id="message"
+                placeholder="Subject"
+                rows="5"
+                class="w-full p-4 mt-4 bg-dark-light rounded-2xl text-white placeholder-gray-400 focus:outline-none"
+              ></textarea>
+            </div>
+
+            <div class="mt-8 flex justify-center">
+              <button
+                class="bg-secondary hover:bg-primary rounded-md text-black font-bold py-2 px-4"
+              >
+                Submit
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-greenish mx-auto flex justify-between items-center px-4">
+      <div class="text-white p-8 max-w-[1320px] mx-auto">
+        <div class="text-green-300 py-10">
+          <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+              <div>
+                <h2 class="text-2xl md:text-3xl font-bold text-secondary">
+                  Subscribe here to receive new updates, notifications, and
+                  more.
+                </h2>
+                <p class="mt-2 text-secondary">
+                  Join now to stay updated on all the latest developments,
+                  features, and upgrades of CYPHRR.
+                </p>
+              </div>
+              <div class="flex justify-center">
+                <form class="flex flex-col sm:flex-row w-full max-w-md">
+                  <input
+                    type="email"
+                    placeholder="Enter your email"
+                    class="bg-black text-secondary p-4 rounded-t-lg sm:rounded-l-lg sm:rounded-t-none focus:outline-none flex-grow placeholder-secondary"
+                  />
+                  <button
+                    type="submit"
+                    class="bg-secondary text-black font-bold px-6 py-4 rounded-b-lg sm:rounded-l-none sm:rounded-r-lg hover:bg-primary transition"
+                  >
+                    Subscribe
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-black mx-auto px-4 py-8 border-b-2 border-secondary">
+      <div class="text-white p-8 max-w-[1320px] mx-auto">
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 text-center md:text-left"
+        >
+          <div>
+            <h3 class="text-lg font-semibold text-primary">Documentation</h3>
+            <ul class="mt-4 space-y-2">
+              <li>
+                <a href="#" class="hover:underline text-secondary"
+                  >Terms of use</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:underline text-secondary"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:underline text-secondary"
+                  >Terms & Conditions</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-semibold text-primary">Company</h3>
+            <ul class="mt-4 space-y-2">
+              <li>
+                <a href="#" class="hover:underline text-secondary">About Us</a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-semibold text-primary">Contact Info</h3>
+            <ul class="mt-4 space-y-2">
+              <li>
+                <a href="#" class="hover:underline text-secondary"
+                  >www.cyphrr.com</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:underline text-secondary"
+                  >info@cyphrr.com</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-semibold text-primary">Support</h3>
+            <ul class="mt-4 space-y-2">
+              <li>
+                <a href="#" class="hover:underline text-secondary"
+                  >Technical Support</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-semibold text-primary">Follow Us:</h3>
+            <ul class="mt-4 flex justify-center md:justify-start space-x-4">
+              <li>
+                <a href="#" class="hover:text-green-600">
+                  <img
+                    src="assets/images/vector ig (2).png"
+                    alt="Instagram"
+                    class="h-6 w-6"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-green-600">
+                  <img
+                    src="assets/images/Vector.png"
+                    alt="Facebook"
+                    class="h-6 w-6"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-green-600">
+                  <img
+                    src="assets/images/Vector (1).png"
+                    alt="Twitter"
+                    class="h-6 w-6"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-black py-2">
+      <p class="text-secondary text-center">
+        © Copyright 2024, All Rights Reserved by CYPHRR
+      </p>
+    </div>
+  </body>
+</html>

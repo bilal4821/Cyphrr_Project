@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Figma to HTML</title>
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body class="font-poppins">
+    <nav>
+      <div class="bg-secondary py-4 hidden sm:block">
+        <div
+          class="max-w-[1320px] mx-auto flex justify-between items-center px-4"
+        >
+          <div class="flex items-center space-x-16">
+            <a href="#" class="flex items-center space-x-3">
+              <img
+                src="assets/images/call.png"
+                alt="Call Icon"
+                class="w-[29px] h-[29px]"
+              />
+              <span class="text-black font-bold text-lg">+0123456789</span>
+            </a>
+
+            <a href="#" class="flex items-center space-x-3">
+              <img
+                src="assets/images/mail.png"
+                alt="Mail Icon"
+                class="w-[29px] h-[29px]"
+              />
+              <span class="text-black font-bold text-lg">info@cyphrr.com</span>
+            </a>
+          </div>
+
+          <div class="flex space-x-8">
+            <a href="#" class="text-black text-2xl">
+              <img
+                class="w-[27px] h-[27px]"
+                src="assets/images/vector ig.png"
+                alt="instagram"
+              />
+            </a>
+            <a href="#" class="text-black text-2xl">
+              <img
+                class="w-[27px] h-[27px]"
+                src="assets/images/vector fb.png"
+                alt="facebook"
+              />
+            </a>
+            <a href="#" class="text-black text-2xl">
+              <img
+                class="w-[27px] h-[27px]"
+                src="assets/images/vector tw.png"
+                alt="twitter"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="bg-2 text-white font-poppins">
+      <!-- <header
+        class="flex justify-between items-center py-11 max-w-[1320px] px-6 mx-auto"
+      >
+        <div>
+          <img class="w-[259px]" src="assets/images/cyphrr.png" alt="Logo" />
+        </div>
+
+        <div class="hidden lg:flex space-x-9">
+          <a href="./index.html" class="text-sm hover:text-secondary text-primary">Home</a>
+          <a
+            target="_blank"
+            href="./about.html"
+            class="text-sm hover:text-secondary text-primary"
+            >About</a
+          >
+          <a href="./contact.html" class="text-sm hover:text-secondary text-primary"
+            >Contact</a
+          >
+        </div>
+
+        <div class="hidden lg:flex space-x-4">
+          <button
+            class="flex items-center space-x-2 text-lg px-4 py-2 bg-transparent"
+          >
+            <img
+              class="w-[30px]"
+              src="assets/images/person_add.png"
+              alt="My Account"
+            />
+            <span class="text-primary text-sm">My Account</span>
+          </button>
+          <button
+            class="px-2 py-2 bg-secondary text-black rounded-lg hover:bg-primary font-bold text-sm"
+          >
+            Create Account
+          </button>
+        </div>
+
+        <button
+          class="lg:hidden p-2 w-10 h-10 text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+        >
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            ></path>
+          </svg>
+        </button>
+      </header> -->
+
+
+      <header class="flex justify-between items-center py-11 max-w-[1320px] px-6 mx-auto">
+        <div>
+          <img class="w-[259px]" src="assets/images/cyphrr.png" alt="Logo" />
+        </div>
+      
+        <!-- Hidden Navigation for larger screens -->
+        <div class="hidden lg:flex space-x-9">
+          <a href="./index.html" class="text-sm hover:text-secondary text-primary">Home</a>
+          <a href="./about.html" class="text-sm hover:text-secondary text-primary">About</a>
+          <a href="./contact.html" class="text-sm hover:text-secondary text-primary">Contact</a>
+        </div>
+      
+        <div class="hidden lg:flex space-x-4">
+          <button class="flex items-center space-x-2 text-lg px-4 py-2 bg-transparent">
+            <img class="w-[30px]" src="assets/images/person_add.png" alt="My Account" />
+            <span class="text-primary text-sm">My Account</span>
+          </button>
+          <button class="px-2 py-2 bg-secondary text-black rounded-lg hover:bg-primary font-bold text-sm">
+            Create Account
+          </button>
+        </div>
+      
+        <!-- Hamburger Menu Button -->
+        <button
+          class="lg:hidden p-2 w-10 h-10 text-gray-400 rounded-lg hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-200"
+          onclick="document.getElementById('mobile-menu').classList.toggle('hidden');">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
+      </header>
+      
+      <!-- Mobile Navigation -->
+      <div id="mobile-menu" class="hidden lg:hidden p-6">
+        <a href="./index.html" class="block text-sm hover:text-secondary text-primary mb-4">Home</a>
+        <a href="./about.html" class="block text-sm hover:text-secondary text-primary mb-4">About</a>
+        <a href="./contact.html" class="block text-sm hover:text-secondary text-primary mb-4">Contact</a>
+        <button class="flex items-center space-x-2 text-lg  bg-transparent w-full mb-4">
+          <img class="w-[30px]" src="assets/images/person_add.png" alt="My Account" />
+          <span class="text-primary text-sm">My Account</span>
+        </button>
+        <button class="px-2 py-2 bg-secondary text-black rounded-lg hover:bg-primary font-bold text-sm w-full">
+          Create Account
+        </button>
+      </div>
+      
+
+      <div class="text-center mt-36">
+        <h1 class="text-primary font-bold text-3xl">About Company</h1>
+        <br />
+        <span class="text-secondary cursor-pointer"> Home</span>
+        <span class="text-secondary">|</span>
+        <span class="text-primary cursor-pointer">About</span>
+      </div>
+    </div>
+
+    <div class="bg-black mx-auto flex justify-between items-center px-4">
+      <div class="text-white p-8 max-w-[1320px] mx-auto">
+        <div
+          class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 mt-8"
+        >
+          <div>
+            <h2 class="text-secondary font-semibold mb-4 text-2xl">About Us</h2>
+            <h1 class="text-4xl font-bold text-primary mb-6">
+              Delivering professional support both locally and internationally
+            </h1>
+            <p class="text-secondary">
+              No matter your location, we are ready to assist.
+            </p>
+          </div>
+
+          <div class="space-y-4">
+           
+
+            <div>
+              <h3 id="whoWeAre" class="text-primary font-bold mb-4 text-2xl cursor-pointer" onclick="toggleParagraph()">Who We Are?</h3>
+            
+              <p id="paragraph" class="text-secondary mb-4 hidden">
+                We are a real-time resource platform company dedicated to
+                providing users with instant access to everyday essentials
+                online. Our goal is to ensure everyone has a reliable and timely
+                source for their daily needs.
+              </p>
+              <div class="w-full border-b-2 border-b-white"></div>
+            </div>
+
+            <div>
+              <h3 id="ourGoal" class="text-primary font-semibold mb-4 text-2xl cursor-pointer" onclick="toggleGoalParagraph()">What's our Goal?</h3>
+              <div class="w-full border-b-2 border-b-white mb-4"></div>
+              <p id="goalParagraph" class="text-secondary mb-4 hidden">
+                Placeholder content for this accordion, which is intended to
+                demonstrate the .accordion-flush class. This is the second
+                item's accordion body. Let's imagine this being filled with some
+                actual content.
+              </p>
+            </div>
+
+            
+      
+
+
+        
+            <div>
+              <h3 id="ourVision" class="text-primary font-semibold mb-4 text-2xl cursor-pointer" onclick="toggleVisionParagraph()">Our Vision</h3>
+              <div class="w-full border-b-2 border-b-white mb-4"></div>
+              <p id="visionParagraph" class="text-secondary mb-4 hidden">
+                Placeholder content for this accordion, which is intended to
+                demonstrate the .accordion-flush class. This is the third item's
+                accordion body. Nothing more exciting happening here in terms of
+                content, but just filling up the space to make it look, at least
+                at first glance, a bit more representative of how this would
+                look in a real-world application.
+              </p>
+            </div>
+
+          </div>
+        </div>
+        <img class="mt-14" src="assets/images/Group 21.png" alt="" />
+
+        <div class="grid grid-cols-1 md:grid-cols-4 p-10 mx-auto w-[76%] gap-20">
+          <div class="flex flex-col items-center">
+            <img src="assets/images/Frame 2.png" alt="" />
+            <h2 class="text-2xl text-primary font-semibold mt-4">500+</h2>
+            <p class="text-secondary">Jobs</p>
+          </div>
+
+          <div class="flex flex-col items-center">
+            <img src="assets/images/Frame 3.png" alt="" />
+            <h2 class="text-2xl text-primary font-semibold mt-4">250+</h2>
+            <p class="text-secondary">Companies</p>
+          </div>
+
+          <div class="flex flex-col items-center">
+            <img src="assets/images/Frame 4.png" alt="" />
+            <h2 class="text-2xl text-primary font-semibold mt-4">1000+</h2>
+            <p class="text-secondary">Employees</p>
+          </div>
+
+          <div class="flex flex-col items-center">
+            <img src="assets/images/Frame 5.png" alt="" />
+            <h2 class="text-2xl text-primary font-semibold mt-4">5000+</h2>
+            <p class="text-secondary">Satisfied Clients</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-dark-light mx-auto flex justify-between items-center px-4">
+      <div class="text-white p-8 max-w-[1320px] mx-auto">
+        <div
+          
+          class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-14 mt-12"
+        >
+          <div>
+            <img src="assets/images/Image.png" alt="" />
+          </div>
+
+          <div class="space-y-4">
+            <div class="mt-12">
+              <h3  class="text-secondary font-bold text-2xl mb-4">
+                About Us
+              </h3>
+
+              <h1 class="text-primary mb-4 font-extrabold text-3xl">
+                Get over 50,000+ job opportunities.
+              </h1>
+              <p class="text-secondary">
+                Explore thousands of job opportunists tailored to your
+                preferences, ensuring a continuous flow of work. Imagine never
+                being out of a job! We cater to everyone - job seekers,
+                employers, and independent contractors. We keep you working!
+              </p>
+            </div>
+
+
+
+            <div>
+              <ul class="text-secondary mb-12 " style="list-style-type: disc; padding-left: 20px;">
+                <li>Real time job notifications</li>
+                <li>Huge job listing database</li>
+                <li>Easy online job application system.</li>
+              </ul>
+            </div>
+            
+
+            <button
+              class="bg-secondary hover:bg-primary rounded-md text-black font-bold py-2 px-9 "
+            >
+              Post a Job
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-black mx-auto flex justify-between items-center px-4">
+      <div class="text-white p-8 max-w-[1320px] mx-auto mb-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-14 items-center">
+          <div class="space-y-4">
+            <h1 class="text-secondary text-2xl mb-5">About Our Job Finder</h1>
+
+            <h1 class="text-3xl font-bold text-primary mb-5">
+              Explore thousands of job listings from top companies
+            </h1>
+
+            <p class="text-secondary mb-5">
+              Discover thousands of job openings from leading companies. Our
+              advanced search filters help you refine your choices by location,
+              salary, job type, and more, ensuring you find roles that perfectly
+              match your preferences.
+            </p>
+
+            <h2 class="text-xl font-bold text-primary mb-5">Popular Job Seekers</h2>
+
+            <p class="text-secondary">
+              Our advanced search filters allow you to narrow down your options
+              based on location, salary, job type, and more, ensuring that you
+              find positions that align perfectly with your preferences.
+            </p>
+
+            <div
+              class="grid md:grid-cols-2 sm:grid-cols-1 lg:grid-cols-3 gap-4 py-3"
+            >
+              <button
+                class="bg-greenish text-greenish-light font-bold py-2 px-4 rounded-lg text-sm"
+              >
+                Software Developer
+              </button>
+              <button
+                class="bg-greenish text-greenish-light font-bold py-2 px-4 rounded-lg text-sm"
+              >
+                Registered Nurse
+              </button>
+              <button
+                class="bg-greenish text-greenish-light font-bold py-2 px-4 rounded-lg text-sm"
+              >
+                Graphic Designer
+              </button>
+              <button
+                class="bg-greenish text-greenish-light font-bold py-2 px-4 rounded-lg text-sm"
+              >
+                Marketing Specialist
+              </button>
+              <button
+                class="bg-greenish text-greenish-light font-bold py-2 px-4 rounded-lg text-sm"
+              >
+                Financial Analyst
+              </button>
+              <button
+                class="bg-greenish text-greenish-light font-bold py-2 px-4 rounded-lg text-sm"
+              >
+                Data Analyst
+              </button>
+            </div>
+          </div>
+
+          <div>
+            <img
+              src="assets/images/About Left.png"
+              alt="Woman with a cup"
+              class="rounded-lg mt-14"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-secondary mx-auto flex justify-between items-center px-4">
+      <div class="text-black p-8 max-w-[1320px] mx-auto">
+        <section class="mt-9 mb-12">
+          <h2 class="text-3xl font-bold text-center mb-12">How it Works?</h2>
+
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 max-w-7xl mx-auto px-4"
+          >
+            <div class="text-center">
+              <div class="mb-4">
+                <img class="mx-auto" src="assets/images/Icon.png" alt="" />
+              </div>
+              <h3 class="text-xl font-semibold">Create an Account</h3>
+              <p >
+                Sign up now to gain access to all resources with CYPHRR.
+              </p>
+            </div>
+
+            <div class="text-center">
+              <div class="mb-4">
+                <img class="mx-auto" src="assets/images/Frame 16.png" alt="" />
+              </div>
+              <h3 class="text-xl font-semibold">Complete Your Profile</h3>
+              <p>
+                Complete your profile fully to boost our job search results.
+              </p>
+            </div>
+
+            <div class="text-center">
+              <div class="mb-4">
+                <img class="mx-auto" src="assets/images/Frame 18.png" alt="" />
+              </div>
+              <h3 class="text-xl font-semibold">Set Up Job Alerts</h3>
+              <p>
+                Activate real-time job alerts and notifications with CYPHRR.
+              </p>
+            </div>
+
+            <div class="text-center">
+              <div class="mb-4">
+                <img class="mx-auto" src="assets/images/Frame 14.png" alt="" />
+              </div>
+              <h3 class="text-xl font-semibold">Explore Job Listings</h3>
+              <p>
+                Explore thousands of job areas that align with your preferences.
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <div class="bg-black mx-auto px-4 py-8 border-b-2 border-secondary">
+      <div class="text-white p-8 max-w-[1320px] mx-auto">
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 text-center md:text-left"
+        >
+          <div>
+            <h3 class="text-lg font-semibold text-primary">Documentation</h3>
+            <ul class="mt-4 space-y-2">
+              <li>
+                <a href="#" class="hover:underline text-secondary"
+                  >Terms of use</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:underline text-secondary"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:underline text-secondary"
+                  >Terms & Conditions</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-semibold text-primary">Company</h3>
+            <ul class="mt-4 space-y-2">
+              <li>
+                <a href="#" class="hover:underline text-secondary">About Us</a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-semibold text-primary">Contact Info</h3>
+            <ul class="mt-4 space-y-2">
+              <li>
+                <a href="#" class="hover:underline text-secondary"
+                  >www.cyphrr.com</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:underline text-secondary"
+                  >info@cyphrr.com</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-semibold text-primary">Support</h3>
+            <ul class="mt-4 space-y-2">
+              <li>
+                <a href="#" class="hover:underline text-secondary"
+                  >Technical Support</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-semibold text-primary">Follow Us:</h3>
+            <ul class="mt-4 flex justify-center md:justify-start space-x-4">
+              <li>
+                <a href="#" class="hover:text-green-600">
+                  <img
+                    src="assets/images/vector ig (2).png"
+                    alt="Instagram"
+                    class="h-6 w-6"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-green-600">
+                  <img
+                    src="assets/images/Vector.png"
+                    alt="Facebook"
+                    class="h-6 w-6"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-green-600">
+                  <img
+                    src="assets/images/Vector (1).png"
+                    alt="Twitter"
+                    class="h-6 w-6"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-black py-2">
+      <p class="text-secondary text-center">
+        © Copyright 2024, All Rights Reserved by CYPHRR
+      </p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
